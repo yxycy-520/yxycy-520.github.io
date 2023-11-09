@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>发包流程</title>
+    <link href="/2023/11/09/%E5%8F%91%E5%8C%85%E6%B5%81%E7%A8%8B/"/>
+    <url>/2023/11/09/%E5%8F%91%E5%8C%85%E6%B5%81%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h5 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> /home/app/cn-app/service   进入发包的目录<br></code></pre></td></tr></table></figure><h5 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ps -ef |grep qyny<br></code></pre></td></tr></table></figure><h5 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h5><ul><li>查看jar包的进程ID  并杀死</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">kill</span> -9 xx<br></code></pre></td></tr></table></figure><h5 id="步骤四"><a href="#步骤四" class="headerlink" title="步骤四"></a>步骤四</h5><ul><li>启动服务</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">nohup</span> java -jar qyny_service_code-0.0.1-SNAPSHOT.jar  &gt;text.out 2&gt;&amp;1&amp;<br></code></pre></td></tr></table></figure><h5 id="步骤五"><a href="#步骤五" class="headerlink" title="步骤五"></a>步骤五</h5><ul><li>查看启动日志  确认程序正常启动</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">tail</span> -f text.out<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>配置文件</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>配置 Java 虚拟机</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>测试</title>
     <link href="/2023/11/08/%E6%B5%8B%E8%AF%95/"/>
     <url>/2023/11/08/%E6%B5%8B%E8%AF%95/</url>
@@ -11,6 +36,18 @@
     <content type="html"><![CDATA[]]></content>
     
     
+    <categories>
+      
+      <category>测试模块</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>测试</tag>
+      
+    </tags>
     
   </entry>
   
