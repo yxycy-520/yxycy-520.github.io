@@ -58,7 +58,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -68,6 +68,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -225,6 +252,48 @@
     
     <div class="category row nomargin-x">
       <a class="category-item collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="测试模块"
+        id="heading-187e79ab5e60e4e2b5c36682ff684809" role="tab" data-toggle="collapse" href="#collapse-187e79ab5e60e4e2b5c36682ff684809"
+        aria-expanded="false"
+      >
+        测试模块
+        <span class="list-group-count"></span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+        <a href="/categories/%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9D%97/" class="category-count col-2 col-md-1 col-xm-1">
+          <i class="iconfont icon-articles"></i>
+          <span>1</span>
+        </a>
+      
+      <div class="category-collapse collapse " id="collapse-187e79ab5e60e4e2b5c36682ff684809"
+           role="tabpanel" aria-labelledby="heading-187e79ab5e60e4e2b5c36682ff684809">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/11/08/%E6%B5%8B%E8%AF%95/" title="测试"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">测试</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="配置文件"
         id="heading-15c64aa0b4044aa2fc1b7df04b2c6302" role="tab" data-toggle="collapse" href="#collapse-15c64aa0b4044aa2fc1b7df04b2c6302"
         aria-expanded="false"
@@ -267,22 +336,22 @@
     
     <div class="category row nomargin-x">
       <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="测试模块"
-        id="heading-187e79ab5e60e4e2b5c36682ff684809" role="tab" data-toggle="collapse" href="#collapse-187e79ab5e60e4e2b5c36682ff684809"
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="测试"
+        id="heading-db06c78d1e24cf708a14ce81c9b617ec" role="tab" data-toggle="collapse" href="#collapse-db06c78d1e24cf708a14ce81c9b617ec"
         aria-expanded="false"
       >
-        测试模块
+        测试
         <span class="list-group-count"></span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
-        <a href="/categories/%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9D%97/" class="category-count col-2 col-md-1 col-xm-1">
+        <a href="/categories/%E6%B5%8B%E8%AF%95/" class="category-count col-2 col-md-1 col-xm-1">
           <i class="iconfont icon-articles"></i>
           <span>1</span>
         </a>
       
-      <div class="category-collapse collapse " id="collapse-187e79ab5e60e4e2b5c36682ff684809"
-           role="tabpanel" aria-labelledby="heading-187e79ab5e60e4e2b5c36682ff684809">
+      <div class="category-collapse collapse " id="collapse-db06c78d1e24cf708a14ce81c9b617ec"
+           role="tabpanel" aria-labelledby="heading-db06c78d1e24cf708a14ce81c9b617ec">
         
         
           
@@ -291,10 +360,10 @@
     
       
       
-        <a href="/2023/11/08/%E6%B5%8B%E8%AF%95/" title="测试"
+        <a href="/2023/11/15/%E6%BC%94%E7%A4%BAhexo/" title="演示hexo"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">测试</span>
+          <span class="category-post">演示hexo</span>
         </a>
       
     
@@ -357,7 +426,26 @@
   
   
   
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 </div>
+
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("11/15/2023 14:38:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+
 
   </footer>
 
@@ -422,5 +510,4 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-</body>
-</html>
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
